@@ -1,0 +1,27 @@
+<h1>Getthing started with {{title}}</h1>
+<h1>Getthing started with {{'title'}}</h1>
+
+
+<!------------------------->
+<h1>{{pagetitle()}}</h1>
+<h1>{{'hello from blog'}}</h1>
+<!------------------------->
+<!-- <h1>{{isHomePage ? "This Is Home Page" : "About Page"}}</h1> -->
+<h1>{{isHomePage ? "This Is Home Page" : "About Page"}}</h1>
+<!------------------------->
+<input type="text" placeholder="@Email" [value]="defultemail">
+<!-- ------------------- -->
+<!-- <h3 [class.header]="isheader">hello header test</h3> -->
+
+<p [ngClass]="headerClass()">hello header test</p>
+
+<!-- ------------------ -->
+<p [style.fontSize]="singlestylebinding">single style binding</p>
+
+<p [ngStyle]="{multiplestylebinding}">multiple style binding</p>
+<!-- ------------------ -->
+
+<button (click)="Toggleheaderstate()">Toggle header state</button>
+<h3> isHeader :{{isheader}}</h3>
+
+
